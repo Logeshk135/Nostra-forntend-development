@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <p>Sign Up and GET 20% OFF For Your First Order</p>
+        <span id="close-banner">×</span>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h2 class="logo">Nostra</h2>
+
+        <nav>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Arrival</a></li>
+                <li><a href="#">Most Wanted</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Three layer icon -->
+        <div class="hamburger" id="hamburger"></div>
+    </header>
+
+    <!-- Hero Section with Image Slider -->
+    <section class="hero">
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+        <div class="slider">
+            <img src="./images/img1.jpeg" alt="Slide 1" class="slide active">
+            <img src="./images/img3.jpg" alt="Slide 2" class="slide">
+            <img src="./images/img 2.jpg" alt="Slide 3" class="slide">
+
+
+            <div class="hero-text">
+                <h1>Level Up Your Style With Our</h1>
+                <p>Summer Collections</p>
+                <button class="shop-btn">Shop Now →</button>
+            </div>
+        </div>
+
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
